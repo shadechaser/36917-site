@@ -91,48 +91,12 @@ Your content here in Markdown.
 
 ## Deploying to GitHub Pages
 
-Already done — site is live at `36917.me`. For reference:
-
-1. Repo: `36917-site` (created under github.com/shadechaser/36917-site)
-2. Pushed local `C:\Users\jerry\Documents\36917-site\` to it
-3. Repo Settings → Pages → Source: `main` branch, `/ (root)`
-4. `36917.me` pointed at GitHub Pages via a `CNAME` file in the repo + DNS records (A records + CNAME) set at Squarespace domain settings
+1. Repo: `36917-site` (already created)
+2. Push local `C:\Users\jerry\Documents\36917-site\` to it
+3. Repo Settings → Pages → Source: branch + root
+4. Point `36917.me` at GitHub Pages via CNAME + DNS
 
 GitHub's docs: https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site
-
-## Updating the Live Site
-
-Once you've made changes locally — added a post, tweaked CSS, whatever — here's how to push them live:
-
-**1. Check it locally first**
-Run `start.bat`, look at `localhost:4000`, make sure it looks right.
-
-**2. Push it up**
-
-Open Command Prompt:
-
-```
-cd C:\Users\jerry\Documents\36917-site
-```
-
-```
-git add .
-```
-
-```
-git commit -m "describe what you changed"
-```
-
-```
-git push
-```
-
-That's it. `git add .` stages every changed or new file in the whole folder — doesn't matter if it's 1 file or 20. `commit` saves a snapshot with your message. `push` sends it to GitHub, which automatically rebuilds and republishes the live site — usually live within a minute or two.
-
-**Notes:**
-- No need to run `git init`, `git remote add`, or `git branch -M main` again — those were one-time setup steps already done.
-- If `git` ever comes back as "not recognized" in Command Prompt, close and reopen the Command Prompt window (fixes it 90% of the time), or check that `C:\Program Files\Git\cmd` is still in your system PATH.
-- The commit message is just a note to your future self — worth being roughly accurate (e.g. `"add three new prose pieces, fix sidebar css"`) rather than always writing `"update"`.
 
 ## Reference
 
