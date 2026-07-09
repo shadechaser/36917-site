@@ -1,0 +1,442 @@
+---
+---
+
+/* ============================================================
+   36917 — The Notebook
+   Spare, private, almost nothing on the page
+   ============================================================ */
+
+:root {
+  --ink:        #111110;
+  --paper:      #f5f3ef;
+  --mid:        #4a4a47;
+  --rule:       #b8b6b0;
+  --accent:     #333331;
+
+  --font-body:  'EB Garamond', Georgia, serif;
+  --font-ui:    'DM Mono', 'Courier New', monospace;
+
+  --measure:    62ch;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  font-size: 20px;
+  background: var(--paper);
+  color: var(--ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: var(--font-body);
+  line-height: 1.8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.15s;
+}
+a:hover { color: var(--accent); }
+
+p { margin-bottom: 1.2em; }
+p:last-child { margin-bottom: 0; }
+
+/* --- Layout --- */
+.site-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 2.5rem;
+  width: 100%;
+}
+
+main { flex: 1; padding: 4rem 0 6rem; }
+
+/* --- Header --- */
+.site-header {
+  padding: 2.2rem 0 0;
+}
+
+.site-header .site-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.site-title {
+  font-family: var(--font-ui);
+  font-size: 1.3rem;
+  letter-spacing: 0.22em;
+  text-transform: lowercase;
+  color: var(--ink);
+  text-decoration: none;
+}
+.site-title:hover { color: var(--ink); }
+
+/* --- Navigation --- */
+.site-nav-group {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+  padding-bottom: 1.4rem;
+}
+
+.site-nav-section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.site-nav-label {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  color: #222220;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.15rem 0.9rem;
+  list-style: none;
+  padding: 0;
+}
+
+.site-nav a {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  transition: color 0.15s;
+}
+.site-nav a:hover { color: var(--ink); }
+.site-nav a.active { color: var(--ink); }
+
+.site-nav-search {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  margin-left: 1.2rem;
+}
+.site-nav-search:hover { color: var(--accent); }
+
+.site-nav-divider {
+  width: 0.5px;
+  background: var(--rule);
+  align-self: center;
+  height: 2rem;
+  margin: 0 0.2rem;
+}
+
+/* --- Mandala badge (shared animation keyframes) --- */
+@keyframes bloom2 { 0% { opacity:0; transform:scale(.62); } 24% { opacity:.45; } 100% { opacity:0; transform:scale(1.9); } }
+@keyframes breathe2 { 0%,100% { opacity:.45; transform:scale(1); } 50% { opacity:.8; transform:scale(1.04); } }
+
+.ms-halo { transform-box: fill-box; transform-origin: center; animation: breathe2 9s ease-in-out infinite; }
+.ms-bloom { transform-box: fill-box; transform-origin: center; animation: bloom2 9s ease-out infinite; }
+.ms-bloom.d1 { animation-delay: 3s; }
+.ms-bloom.d2 { animation-delay: 6s; }
+.ms-b0 { transform-box: fill-box; transform-origin: center; animation: breathe2 6s ease-in-out infinite; }
+
+/* --- Hero --- */
+.site-hero {
+  padding: 2.8rem 0 2rem;
+  border-bottom: 0.5px solid var(--rule);
+}
+
+.site-hero p {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 1.25rem;
+  line-height: 1.65;
+  color: #111110;
+  max-width: 44ch;
+  margin: 0;
+}
+
+.hero-row {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.mandala-badge-inline {
+  display: block;
+  width: 96px;
+  height: 96px;
+  flex-shrink: 0;
+  transition: opacity 0.4s ease;
+}
+.mandala-badge-inline:hover { opacity: 0.72; }
+.mandala-badge-inline svg { width: 100%; height: 100%; overflow: visible; display: block; }
+
+/* --- Post list --- */
+.post-list { list-style: none; }
+
+.post-list li {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+  padding: 0.75rem 0;
+  border-bottom: 0.5px solid var(--rule);
+}
+.post-list li:first-child { border-top: 0.5px solid var(--rule); }
+
+.post-list .dash {
+  color: var(--rule);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.post-list .post-title {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.post-list .post-title a {
+  color: var(--ink);
+}
+.post-list .post-title a:hover { color: var(--accent); }
+
+.post-list .post-date {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  color: var(--mid);
+  letter-spacing: 0.04em;
+  margin-left: auto;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* --- Post content --- */
+.post-header {
+  margin-bottom: 3rem;
+}
+
+.post-header h1 {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-bottom: 0.6rem;
+  line-height: 1.4;
+}
+
+.post-meta {
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  color: var(--mid);
+  letter-spacing: 0.06em;
+}
+
+.post-content {
+  max-width: var(--measure);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+/* Verse posts break out of the normal .site-wrap column so
+   long lineated lines have more room before wrapping.
+   The negative margins expand the box to the full viewport
+   width; the padding then re-insets the text, capping the
+   effective line width at ~1100px on wide screens while
+   never going below the site's normal 2.5rem side padding. */
+.post-content.verse {
+  line-height: 2.2;
+}
+.post-content.verse p { margin-bottom: 2em; }
+
+/* Hanging indent: applied per intended line (see the script
+   in _layouts/post.html that wraps each <br>-separated line
+   in its own span). Only a line the browser is forced to
+   wrap gets visually indented — a line break the poet chose
+   stays flush. */
+.post-content.verse .vline {
+  display: block;
+  padding-left: 1.2em;
+  text-indent: -1.2em;
+}
+
+/* --- Section intro --- */
+.section-intro {
+  font-family: var(--font-ui);
+  font-size: 0.65rem;
+  color: var(--mid);
+  letter-spacing: 0.06em;
+  margin-bottom: 2rem;
+}
+
+/* --- Pagination --- */
+.pagination {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  color: var(--mid);
+  letter-spacing: 0.06em;
+}
+.pagination a { color: var(--mid); }
+.pagination a:hover { color: var(--ink); }
+
+/* --- Post nav --- */
+.post-nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 0.5px solid var(--rule);
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  color: var(--mid);
+  letter-spacing: 0.04em;
+  gap: 2rem;
+}
+.post-nav a {
+  color: var(--mid);
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+.post-nav a:hover { color: var(--ink); }
+.post-nav .next { text-align: right; }
+
+/* --- Static pages --- */
+.page-content {
+  max-width: var(--measure);
+  font-size: 1rem;
+  line-height: 1.9;
+}
+.page-content h2 {
+  font-size: 0.7rem;
+  font-family: var(--font-ui);
+  letter-spacing: 0.1em;
+  text-transform: lowercase;
+  color: var(--mid);
+  font-weight: 400;
+  margin: 2.5rem 0 0.8rem;
+}
+
+/* --- Music --- */
+.music-list { list-style: none; }
+.music-list li { padding: 1rem 0; border-bottom: 0.5px solid var(--rule); }
+.music-list li:first-child { border-top: 0.5px solid var(--rule); }
+.music-embed { margin-top: 0.6rem; }
+.music-embed iframe { width: 100%; border: none; }
+
+/* --- Contact --- */
+.contact-form { max-width: 420px; }
+.contact-form label {
+  display: block;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  color: var(--mid);
+  margin-bottom: 0.3rem;
+  margin-top: 1.2rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 0.5px solid var(--rule);
+  background: transparent;
+  padding: 0.4rem 0;
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--ink);
+  outline: none;
+  transition: border-color 0.15s;
+  border-radius: 0;
+}
+.contact-form input:focus,
+.contact-form textarea:focus { border-bottom-color: var(--accent); }
+.contact-form textarea { min-height: 120px; resize: none; }
+.contact-form button {
+  margin-top: 2rem;
+  background: none;
+  color: var(--mid);
+  border: none;
+  padding: 0;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition: color 0.15s;
+}
+.contact-form button:hover { color: var(--ink); }
+
+/* --- Footer --- */
+.site-footer {
+  padding: 1.5rem 0 2rem;
+}
+.site-footer .site-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  color: var(--mid);
+  letter-spacing: 0.06em;
+}
+
+.site-footer-links {
+  display: flex;
+  gap: 1.2rem;
+  align-items: baseline;
+}
+
+.site-footer-links a {
+  color: var(--mid);
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  letter-spacing: 0.06em;
+}
+.site-footer-links a:hover { color: var(--ink); }
+
+.site-footer-links .footer-special {
+  font-family: var(--font-body);
+  font-style: italic;
+  font-size: 0.7rem;
+  letter-spacing: 0;
+}
+
+/* --- Tablet --- */
+@media (min-width: 601px) and (max-width: 768px) {
+  html { font-size: 18px; }
+  .site-wrap { padding: 0 2rem; }
+}
+
+/* --- Responsive --- */
+@media (max-width: 600px) {
+  html { font-size: 19px; }
+  .site-wrap { padding: 0 1.5rem; }
+  main { padding: 2.5rem 0 4rem; }
+  .site-header { padding: 2rem 0 0; }
+  .site-nav-group { flex-direction: column; gap: 1rem; }
+  .site-nav-search {
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+  margin-left: 1.2rem;
+}
+.site-nav-search:hover { color: var(--accent); }
+
+.site-nav-divider { display: none; }
+  .mandala-badge-inline { width: 56px; height: 56px; }
+  .post-list li { flex-wrap: wrap; gap: 0.4rem; }
+  .post-list .post-date { margin-left: 0; width: 100%; padding-left: 1.5rem; }
+  .post-header h1 { font-size: 1.1rem; }
+  .post-list .post-date { font-size: 0.68rem; }
+  .post-meta { font-size: 0.68rem; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}

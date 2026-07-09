@@ -1,0 +1,97 @@
+---
+layout: default
+title: word cloud
+permalink: /wordcloud/
+---
+
+<div id="cloud-container" style="min-height: 400px; display: flex; align-items: center; justify-content: center;">
+  <p id="cloud-loading" style="font-family: 'DM Mono', monospace; font-size: 0.65rem; color: #ccc; letter-spacing: 0.08em;">building cloud…</p>
+</div>
+
+<style>
+  #cloud-container { flex-wrap: wrap; gap: 0.6rem 1rem; padding: 2rem 0; }
+  .cloud-word {
+    cursor: pointer;
+    color: #2a2a28;
+    line-height: 1.4;
+    font-family: 'EB Garamond', Georgia, serif;
+    transition: color 0.15s;
+    display: inline-block;
+  }
+  .cloud-word:hover { color: #7a2832; }
+</style>
+
+<script>
+var STOPWORDS = new Set([
+  'the','and','a','an','to','of','in','is','it','that','was','for','on','are',
+  'with','as','at','be','by','from','or','but','not','this','have','had','he',
+  'she','they','we','you','i','my','his','her','their','our','its','if','so',
+  'do','did','what','when','which','who','will','would','could','should','been',
+  'has','were','one','all','there','about','more','out','up','no','can','just',
+  'me','him','them','your','into','than','then','some','like','know','get','got',
+  'also','time','way','even','back','because','very','much','only','well','still',
+  'over','after','before','through','down','now','here','how','any','two','where',
+  'while','these','those','new','first','last','long','little','own','other',
+  'old','right','too','made','say','make','go','come','see','think','look','years',
+  've','re','ll','don','didn','isn','wasn','won','can\'t','i\'m','it\'s','that\'s',
+  'i\'ve','he\'s','she\'s','they\'re','we\'re','you\'re','let','us','every','thing',
+  'things','something','nothing','everything','never','always','again','around',
+  'without','though','off','take','came','went','day','days','man','men','woman',
+  'people','world','life','feel','felt','want','wanted','need','needed','found',
+  'place','way','ways','year','told','said','keep','kept','left','right','next',
+  'seems','seem','seemed','maybe','might','must','used','once','put','three','four',
+  'five','many','may','does','am','each','between','most','since','until','across',
+  'both','few','yet','either','another','same','different','called','every','ask',
+  'asked','hand','hands','point','small','large','big','long','away','across','along'
+]);
+
+fetch('/search.json')
+  .then(function(r) { return r.json(); })
+  .then(function(posts) {
+    var freq = {};
+    posts.forEach(function(post) {
+      var text = ((post.title || '') + ' ' + (post.content || '')).toLowerCase();
+      var words = text.match(/[a-z']{3,}/g) || [];
+      words.forEach(function(w) {
+        w = w.replace(/^'+|'+$/g, '');
+        if (w.length < 3 || STOPWORDS.has(w)) return;
+        freq[w] = (freq[w] || 0) + 1;
+      });
+    });
+
+    var sorted = Object.entries(freq)
+      .filter(function(e) { return e[1] >= 3; })
+      .sort(function(a, b) { return b[1] - a[1]; })
+      .slice(0, 120);
+
+    var max = sorted[0][1];
+    var min = sorted[sorted.length - 1][1];
+
+    // Shuffle for visual interest
+    for (var i = sorted.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var tmp = sorted[i]; sorted[i] = sorted[j]; sorted[j] = tmp;
+    }
+
+    var container = document.getElementById('cloud-container');
+    document.getElementById('cloud-loading').remove();
+    container.style.alignItems = 'baseline';
+
+    sorted.forEach(function(entry) {
+      var word = entry[0], count = entry[1];
+      var scale = (count - min) / (max - min);
+      var size = 0.75 + scale * 2.2;
+      var opacity = 0.4 + scale * 0.6;
+      var span = document.createElement('span');
+      span.className = 'cloud-word';
+      span.textContent = word;
+      span.style.fontSize = size + 'rem';
+      span.style.opacity = opacity;
+      span.title = count + ' occurrences';
+      span.addEventListener('click', function() {
+        window.location.href = '/search/?q=' + encodeURIComponent(word);
+      });
+      container.appendChild(span);
+    });
+  });
+</script>

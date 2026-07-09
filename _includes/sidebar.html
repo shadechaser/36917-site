@@ -1,0 +1,221 @@
+<nav class="sidebar" aria-label="Site index">
+  <div class="sidebar-toggle" id="sidebar-toggle" onclick="toggleSidebar()">
+    <span>contents</span>
+    <span class="sidebar-arrow">↓</span>
+  </div>
+  <div class="sidebar-body" id="sidebar-body">
+    {% assign sections = "prose,haiku,lyrics,xmas,eulogies" | split: "," %}
+    {% for section in sections %}
+      {% if section == "prose" %}
+        {% assign items = site.posts %}
+        {% assign label = "prose" %}
+      {% elsif section == "haiku" %}
+        {% assign items = site.haiku %}
+        {% assign label = "haiku" %}
+      {% elsif section == "lyrics" %}
+        {% assign items = site.lyrics %}
+        {% assign label = "lyrics" %}
+      {% elsif section == "xmas" %}
+        {% assign items = site.xmas %}
+        {% assign label = "christmas" %}
+      {% elsif section == "eulogies" %}
+        {% assign items = site.eulogies %}
+        {% assign label = "eulogies" %}
+      {% endif %}
+      {% if items.size > 0 %}
+      <div class="sb-section">
+        <button class="sb-section-btn" onclick="toggleSection(this)" aria-expanded="false">
+          <span class="sb-label">{{ label }}</span>
+          <span class="sb-count">{{ items.size }}</span>
+        </button>
+        <ul class="sb-posts" hidden>
+          {% assign sorted = items | sort: 'date' | reverse %}
+          {% for post in sorted %}
+          <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</nav>
+
+<style>
+/* Two-column page layout */
+.page-layout {
+  display: flex;
+  align-items: flex-start;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  gap: 4rem;
+}
+
+.page-layout main {
+  flex: 1;
+  min-width: 0;
+  padding: 4rem 0 6rem;
+}
+
+.page-layout main .site-wrap {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Sidebar column */
+.sidebar {
+  width: 180px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 2rem;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+  border: 0.5px solid var(--rule, #d8d6d0);
+  padding: 0.6rem;
+  align-self: flex-start;
+  margin-top: 7rem;
+  
+}
+
+.sidebar-toggle { display: none; }
+
+
+.sb-section { margin-bottom: 0.6rem; }
+
+.sb-section-btn {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  padding: 0.3rem 0.5rem;
+  cursor: pointer;
+  text-align: left;
+  gap: 0.5rem;
+}
+
+.sb-label {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: #888;
+  transition: color 0.15s;
+}
+.sb-section-btn:hover .sb-label { color: var(--ink, #1a1a18); }
+.sb-section-btn[aria-expanded="true"] .sb-label { color: var(--ink, #1a1a18); }
+
+.sb-count {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.62rem;
+  color: #bbb;
+  flex-shrink: 0;
+}
+
+.sb-posts {
+  list-style: none;
+  padding: 0.3rem 0 0.5rem 0.7rem;
+  border-left: 0.5px solid var(--rule, #d8d6d0);
+  margin: 0;
+}
+
+.sb-posts li { padding: 0.25rem 0; }
+
+.sb-posts a {
+  font-family: 'EB Garamond', Georgia, serif;
+  font-size: 0.9rem;
+  color: #888;
+  text-decoration: none;
+  line-height: 1.4;
+  display: block;
+  transition: color 0.15s;
+}
+.sb-posts a:hover { color: var(--ink, #1a1a18); }
+
+/* Collapse to single column below 900px */
+@media (max-width: 900px) {
+  .page-layout {
+    flex-direction: column;
+    padding: 0 1.5rem;
+    gap: 0;
+  }
+
+  .page-layout main {
+    padding: 2.5rem 0 4rem;
+    width: 100%;
+  }
+
+  .sidebar {
+    order: -1;
+    width: 100%;
+    padding-top: 0;
+    position: relative;
+    top: auto;
+    max-height: none;
+    overflow-y: visible;
+    border-bottom: 0.5px solid var(--rule, #d8d6d0);
+    padding-bottom: 1rem;
+    margin-bottom: 0;
+  }
+
+  .sidebar-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'DM Mono', monospace;
+    font-size: 0.65rem;
+    letter-spacing: 0.08em;
+    color: var(--mid, #888884);
+    cursor: pointer;
+    padding: 1.5rem 0 0.2rem;
+    min-height: 44px;
+  }
+
+  .sidebar-body {
+}
+  .sidebar-arrow.open { transform: rotate(180deg); }
+
+  .sidebar-body { display: none; padding-top: 1rem; }
+  .sidebar-body.open { display: block; }
+}
+</style>
+
+<script>
+function getSavedSections() {
+  try { return JSON.parse(sessionStorage.getItem('openSections') || '[]'); } catch(e) { return []; }
+}
+
+function saveSections() {
+  var open = [];
+  document.querySelectorAll('.sb-section-btn').forEach(function(btn) {
+    if (btn.getAttribute('aria-expanded') === 'true') {
+      open.push(btn.querySelector('.sb-label').textContent.trim());
+    }
+  });
+  sessionStorage.setItem('openSections', JSON.stringify(open));
+}
+
+function toggleSection(btn) {
+  var expanded = btn.getAttribute('aria-expanded') === 'true';
+  btn.setAttribute('aria-expanded', !expanded);
+  btn.nextElementSibling.hidden = expanded;
+  saveSections();
+}
+
+function toggleSidebar() {
+  document.getElementById('sidebar-body').classList.toggle('open');
+  document.querySelector('.sidebar-arrow').classList.toggle('open');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  var open = getSavedSections();
+  document.querySelectorAll('.sb-section-btn').forEach(function(btn) {
+    var label = btn.querySelector('.sb-label').textContent.trim();
+    if (open.indexOf(label) !== -1) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.nextElementSibling.hidden = false;
+    }
+  });
+});
+</script>

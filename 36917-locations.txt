@@ -1,0 +1,43 @@
+36917.me Site — Key Locations
+==============================
+
+Ruby (the language Jekyll runs on)
+  C:\Ruby40-x64
+
+Jekyll (installed inside Ruby)
+  C:\Ruby40-x64\bin\jekyll
+
+Your site files
+  C:\Users\jerry\OneDrive\Documents\36917-site
+
+---
+
+To start the site locally:
+  1. Open Command Prompt
+  2. Type: cd C:\Users\jerry\OneDrive\Documents\36917-site
+  3. Type: bundle exec jekyll serve
+  4. Open browser and go to: http://localhost:4000
+
+To stop the site:
+  Press Ctrl+C in the Command Prompt window
+
+---
+
+start.bat — Quick Start File
+==============================
+
+The start.bat file lives at:
+  C:\Users\jerry\OneDrive\Documents\36917-site\start.bat
+
+To create it:
+  1. Open PowerShell
+  2. Type: notepad "C:\Users\jerry\OneDrive\Documents\36917-site\start.bat"
+  3. Paste in these two lines:
+       cd C:\Users\jerry\OneDrive\Documents\36917-site
+       bundle exec jekyll serve
+  4. Save and close
+
+To use it:
+  Just double-click start.bat in File Explorer
+  A black window will open and the site will start
+  Then go to http://localhost:4000 in your browser

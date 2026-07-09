@@ -1,0 +1,28 @@
+---
+layout: default
+title: contact
+permalink: /contact/
+---
+
+<div class="page-content">
+
+<!--
+  This form uses Formspree (free tier works fine for a personal site).
+  Sign up at formspree.io, create a form, and replace YOUR_FORM_ID below.
+  No server needed — submissions go straight to your email.
+-->
+
+<form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <label for="name">name</label>
+  <input type="text" id="name" name="name" required>
+
+  <label for="email">email</label>
+  <input type="email" id="email" name="email" required>
+
+  <label for="message">message</label>
+  <textarea id="message" name="message" required></textarea>
+
+  <button type="submit">send</button>
+</form>
+
+</div>

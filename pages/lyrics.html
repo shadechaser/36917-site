@@ -1,0 +1,18 @@
+---
+layout: default
+title: lyrics
+permalink: /lyrics/
+intro: "In the 90's I studied piano and voice at Cap College. Wrote about 60 songs between 1984 and and 2000. Here are some of the lyrics"
+---
+
+<p class="page-intro">{{ page.intro }}</p>
+
+<ul class="post-list">
+  {% assign lyric_posts = site.lyrics | sort: 'date' | reverse %}
+  {% for post in lyric_posts %}
+  <li>
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+  </li>
+  {% endfor %}
+</ul>

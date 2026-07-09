@@ -1,0 +1,31 @@
+---
+layout: default
+body_class: home
+title: prose
+intro: "I write a lot of prose. The dates are when they were originally posted online. With newer posts this correlates with the actual 'when they were written' date; older items were often written some time before posting date."
+pagination:
+  enabled: true
+---
+
+<p class="page-intro">{{ page.intro }}</p>
+
+<ul class="post-list">
+  {% for post in paginator.posts %}
+  <li>
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+  </li>
+  {% endfor %}
+</ul>
+
+{% if paginator.total_pages > 1 %}
+<nav class="pagination" aria-label="Page navigation">
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | relative_url }}">← newer</a>
+  {% endif %}
+  <span class="current">page {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | relative_url }}">older →</a>
+  {% endif %}
+</nav>
+{% endif %}

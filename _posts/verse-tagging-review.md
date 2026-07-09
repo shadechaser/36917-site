@@ -1,0 +1,236 @@
+# style: verse tagging review
+
+Scanned all 211 files in the prose category. 3 already tagged style: verse.
+
+**How to use this:** Put an X in front of any title that is NOT actually a poem (i.e. should stay plain prose). Leave the rest as-is. Send this file back and I will tag everything left unmarked.
+
+---
+
+## Tier 1 - strong poem candidates (67)
+
+- [ ] Prayer for the City  `(2020-03-21-prayer-for-the-city.md)`
+- [ ] Home Is  `(2020-03-23-home-is.md)`
+- [ ] Barefooter’s Canon  `(2020-03-29-barefooters-canon.md)`
+- [ ] Clothed in the Kosmos  `(2020-03-29-clothed-in-the-kosmos.md)`
+- [ ] Strangers in a Strange Hand  `(2020-03-29-strangers-in-a-strange-hand.md)`
+- [ ] the problem with you  `(2021-01-22-the-problem-with-you.md)`
+- [ ] dust, dream and destiny  `(2021-02-06-dust-dream-and-destiny.md)`
+- [ ] home heart love  `(2021-02-06-home-heart-love.md)`
+- [ ] oak  `(2021-02-09-oak.md)`
+- [ ] throat center alchemy  `(2021-06-21-throat-center-alchemy.md)`
+- [ ] gibbous blessing  `(2022-06-21-gibbous-blessing.md)`
+- [ ] ;! (pending and wonder)  `(2023-06-10-pending-and-wonder.md)`
+- [ ] mood  `(2021-04-19-mood.md)`
+- [ ] step back  `(2025-04-08-step-back.md)`
+- [ ] holy living rooms (moon gifts)  `(2020-07-30-holy-living-rooms-moon-gifts.md)`
+- [ ] <strong>please</strong>,  move Through  `(2020-05-29-strongpleasestrong-move-through.md)`
+- [ ] The Greatest Trick in the World  `(2020-03-30-the-greatest-trick-in-the-world.md)`
+- [ ] 1024x768  `(2021-01-21-1024x768.md)`
+- [ ] yellow hat (seeds the day)  `(2021-01-10-yellow-hat-seeds-the-day.md)`
+- [ ] pallet, pigment, person, god  `(2021-01-21-pallet-pigment-person-god.md)`
+- [ ] south of yes north of no  `(2025-05-26-south-of-yes-north-of-no.md)`
+- [ ] gawd’s eye view  `(2022-01-31-gawds-eye-view.md)`
+- [ ] wells of kindness  `(2023-04-06-wells-of-kindness.md)`
+- [ ] shimmer  `(2022-05-20-shimmer.md)`
+- [ ] 1985  `(2021-01-11-1985.md)`
+- [ ] Empathy’s Sheet  `(2020-03-29-empathys-sheet.md)`
+- [ ] meet me at our intersection  `(2021-03-04-meet-me-at-our-intersection.md)`
+- [ ] There Could be Room Two Here  `(2020-03-31-there-could-be-room-two-here.md)`
+- [ ] For the Moment  `(2020-04-01-for-the-moment.md)`
+- [ ] secret brook  `(2020-04-08-secret-brook.md)`
+- [ ] Another 24  `(2020-12-03-another-24.md)`
+- [ ] liminal spaces  `(2022-12-19-liminal-spaces.md)`
+- [ ] Praying for God  `(2020-03-29-praying-for-god.md)`
+- [ ] Sate of Is  `(2025-04-12-sate-of-is.md)`
+- [ ] strange dance, this  `(2021-11-26-strange-dance-this.md)`
+- [ ] journey to the Lost Words  `(2022-03-02-journey-to-the-lost-words.md)`
+- [ ] Was  `(2020-05-11-was.md)`
+- [ ] perfect loose-ed (lucid) dream  `(2021-05-19-perfect-loose-ed-lucid-dream.md)`
+- [ ] Against all Odds, You’re Here  `(2020-03-22-against-all-odds-youre-here.md)`
+- [ ] perch  `(2023-01-04-perch.md)`
+- [ ] the harvest’s harvest  `(2021-10-27-the-harvests-harvest.md)`
+- [ ] Muse’s Market  `(2023-07-03-muses-market.md)`
+- [ ] Transcimmanence (the river up or down)  `(2020-07-18-transcimmanence-the-river-up-or-down.md)`
+- [ ] this is what saddens  `(2021-01-21-this-is-what-saddens.md)`
+- [ ] putting back  `(2023-01-26-putting-back.md)`
+- [ ] everything changed  `(2022-05-25-everything-changed.md)`
+- [ ] Greater Call  `(2020-03-29-greater-call.md)`
+- [ ] to the From  `(2022-06-16-to-the-from.md)`
+- [ ] sing  `(2022-02-15-sing.md)`
+- [ ] between the breaths  `(2021-01-18-between-the-breaths.md)`
+- [ ] music, fuck yeah  `(2021-10-29-music-fuck-yeah.md)`
+- [ ] thus did he run  `(2021-07-20-thus-did-he-run.md)`
+- [ ] God’s putting you on  `(2020-03-23-gods-putting-you-on.md)`
+- [ ] Cal  `(2021-01-08-cal.md)`
+- [ ] Sophia’s Grace  `(2022-06-07-sophias-grace.md)`
+- [ ] warrens of Now  `(2024-08-06-warrens-of-now.md)`
+- [ ] storms and winds and wall-less rooms  `(2021-03-29-storms-and-winds-and-wall-less-rooms.md)`
+- [ ] sad  `(2021-08-18-sad.md)`
+- [ ] when  `(2021-03-21-when.md)`
+- [ ] Join us  `(2020-04-05-join-us.md)`
+- [ ] county Transimmanence  `(2021-10-22-county-transimmanence.md)`
+- [ ] Rohr’s Rem  `(2023-03-09-rohrs-rem.md)`
+- [ ] (a) creation tale  `(2024-10-02-a-creation-tale.md)`
+- [ ] Desiderata for Dummies (c)  `(2022-02-16-desiderata-for-dummies-c.md)`
+- [ ] poet’s night  `(2020-05-24-poets-night.md)`
+- [ ] from these to that  `(2021-02-06-from-these-to-that.md)`
+- [ ] You matter  `(2020-04-05-you-matter.md)`
+
+---
+
+## Tier 2 - possible poems, worth a look (29)
+
+- [ ] The guide (j)  `(2020-04-22-the-guide-j.md)`
+- [ ] god’s music  `(2023-03-20-gods-music.md)`
+- [ ] god’s Current in drag  `(2022-09-15-gods-current-in-drag.md)`
+- [ ] …who’s there?  `(2021-02-12-whos-there.md)`
+- [ ] Lens on Suffering  `(2020-03-24-lens-on-suffering.md)`
+- [ ] Suffering’s Gift  `(2020-03-30-sufferings-gift.md)`
+- [ ] bibles and vedas and kiddish cups (oh my)  `(2022-01-31-bibles-and-vedas-and-kiddish-cups-oh-my.md)`
+- [ ] spirit creek  `(2021-10-08-spirit-creek.md)`
+- [ ] the muse, the god gap, and God  `(2020-04-14-the-muse-the-god-gap-and-god.md)`
+- [ ] god’s shot  `(2024-05-10-gods-shot.md)`
+- [ ] adjective-free wednesday  `(2021-07-07-adjective-free-wednesday.md)`
+- [ ] 1977  `(2021-01-13-1977.md)`
+- [ ] god’s haiku  `(2024-10-25-gods-haiku.md)`
+- [ ] wearing wednesday  `(2021-06-30-wearing-wednesday.md)`
+- [ ] another night’s work  `(2022-03-16-another-nights-work.md)`
+- [ ] drinking wind  `(2021-06-10-drinking-wind.md)`
+- [ ] i don’t know  `(2021-05-31-i-dont-know-2.md)`
+- [ ] loves laughter; silence  `(2021-02-03-loves-laughter-silence.md)`
+- [ ] God’s Postman  `(2020-03-21-gods-postman.md)`
+- [ ] God’s calligrapher  `(2020-04-05-gods-calligrapher.md)`
+- [ ] overdue fines  `(2022-06-14-overdue-fines.md)`
+- [ ] grace, gaia, gestalt  `(2021-07-27-grace-gaia-gestalt.md)`
+- [ ] 11/9/2016  `(2020-04-01-1192016.md)`
+- [ ] thirsting for shadows  `(2021-01-21-thirsting-for-shadows.md)`
+- [ ] Fauline’s Garden  `(2020-04-14-faulines-garden.md)`
+- [ ] the relative, in drag  `(2020-12-11-the-relative-in-drag.md)`
+- [ ] breadcrumbs  `(2024-01-01-breadcrumbs.md)`
+- [ ] wrapped in her Everywhere  `(2022-08-11-wrapped-in-her-everywhere.md)`
+- [ ] god at the car dealership  `(2023-10-30-god-at-the-car-dealership.md)`
+
+---
+
+## Tier 3 - likely straight prose, skipped (112)
+
+Not tagging these unless you flag one below. If you spot a poem in here, add its title/filename under "Additions" at the bottom.
+
+- Your always perfect bank of energy  `(2020-04-05-your-always-perfect-bank-of-energy.md)`
+- The Beheld  `(2020-03-30-the-beheld.md)`
+- sorry, can you repeat that?  `(2024-02-02-sorry-can-you-repeat-that.md)`
+- Negating the negatives  `(2020-04-17-negating-the-negatives.md)`
+- “Fuck me.  really?  `(2020-04-14-fuck-me-really.md)`
+- shift  `(2021-01-18-shift.md)`
+- alone together, into the sun  `(2020-12-03-alone-together-into-the-sun.md)`
+- Ode to Covid  `(2020-03-21-ode-to-covid.md)`
+- Crossing the Sea of Now  `(2020-03-21-crossing-the-sea-of-now.md)`
+- The Most Important Feeling  `(2020-03-22-the-most-important-feeling.md)`
+- Voiding the Void  `(2020-03-22-voiding-the-void.md)`
+- Is Your Work Done Here?  `(2020-03-23-is-your-work-done-here.md)`
+- Compassion  `(2020-03-25-compassion.md)`
+- Purpose (being in Being)  `(2020-03-27-purpose-being-in-being.md)`
+- Mental, Emotional, and Spiritual Tylenol  `(2020-03-28-mental-emotional-and-spiritual-tylenol.md)`
+- No start or stop in Surrender  `(2020-03-28-no-start-or-stop-in-surrender.md)`
+- Surrendering to Surrender  `(2020-03-28-surrendering-to-surrender.md)`
+- God’s ATM  `(2020-03-29-gods-atm.md)`
+- Heartbeat in the Rooms  `(2020-03-29-heartbeat-in-the-rooms.md)`
+- Paradox’s Skillfull Gifts  `(2020-03-29-paradoxs-skillfull-gifts.md)`
+- Who Not to Wear  `(2020-03-29-who-not-to-wear.md)`
+- Being Right vs Being Present  `(2020-03-30-being-right-vs-being-present.md)`
+- Music,  God’s Anaesthetic  `(2020-03-30-music-gods-anaesthetic.md)`
+- Acceptance, Willingness, Grace  `(2020-03-31-acceptance-willingness-grace.md)`
+- Laughing with Buddha, Christ, Neils Bohr, William James, and Ramana Maharishi  `(2020-03-31-laughing-with-buddha-christ-neils-bohr-william-james-and-ram.md)`
+- Life is Mandatory  `(2020-04-01-life-is-mandatory.md)`
+- Pine  `(2020-04-01-pine.md)`
+- Word Bottom (17 submissions)  `(2020-04-01-word-bottom-17-submissions.md)`
+- Spiritual Bypassing and Course Correction  `(2020-04-03-spiritual-bypassing-and-course-correction.md)`
+- Maybe it’s not that god didn’t answer  `(2020-04-05-maybe-its-not-that-god-didnt-answer.md)`
+- Maybe your ‘off’ is god’s ‘on’  `(2020-04-05-maybe-your-off-is-gods-on.md)`
+- When you feel like you don’t matter (god’s gps)  `(2020-04-05-when-you-feel-like-you-dont-matter-gods-gps.md)`
+- You’re exactly where you’re supposed to be  `(2020-04-05-youre-exactly-where-youre-supposed-to-be.md)`
+- 3:17 am (the intersection of unbearable and unsolveable)  `(2020-04-06-317-am-the-intersection-of-unbearable-and-unsolveable.md)`
+- and god smiled (becoming the mandala)  `(2020-04-06-and-god-smiled-becoming-the-mandala.md)`
+- Blender your chaos  `(2020-04-06-blender-your-chaos.md)`
+- Glen Gould  `(2020-04-06-glen-gould.md)`
+- Impermanence and death,  the great creators  `(2020-04-06-impermanence-and-death-the-great-creators.md)`
+- In a departed’s shadow: by yourself but not alone  `(2020-04-06-in-a-departeds-shadow-by-yourself-but-not-alone.md)`
+- Mother Mary’s Map  `(2020-04-06-mother-marys-map.md)`
+- The Artist  `(2020-04-06-the-artist.md)`
+- The middle’s edges  `(2020-04-06-the-middles-edges.md)`
+- just a little to the right  `(2020-04-08-just-a-little-to-the-right.md)`
+- all shall be well  `(2020-04-09-all-shall-be-well.md)`
+- moving space  `(2020-05-27-moving-space.md)`
+- Check it at the door please  `(2020-12-03-check-it-at-the-door-please.md)`
+- deux ex machina  `(2020-12-03-deux-ex-machina.md)`
+- just a spoon full of toxins  `(2020-12-03-just-a-spoon-full-of-toxins.md)`
+- The bloom between  `(2020-12-03-the-bloom-between.md)`
+- lilac cathedral  `(2020-12-04-lilac-cathedral.md)`
+- solid lines of broken glass  `(2020-12-04-solid-lines-of-broken-glass.md)`
+- feeling smothered or overwhelmed?  `(2020-12-07-feeling-smothered-or-overwhelmed.md)`
+- having a rough go of it?  `(2020-12-07-having-a-rough-go-of-it.md)`
+- the (a)isle of left and right  `(2020-12-07-the-aisle-of-left-and-right.md)`
+- alphabet soup  `(2020-12-08-alphabet-soup.md)`
+- gimme 3 minutes  `(2020-12-08-gimme-3-minutes.md)`
+- incommunicado  `(2020-12-08-incommunicado.md)`
+- non local  `(2020-12-08-non-local.md)`
+- the tree of life in rumi’s field neath van goghs skies  `(2020-12-08-the-tree-of-life-in-rumis-field-neath-van-goghs-skies.md)`
+- Rich Paulsy is a coward  `(2021-01-08-rich-paulsy-is-a-coward.md)`
+- between the keys  `(2021-01-18-between-the-keys.md)`
+- GrIndia  `(2021-01-18-grindia.md)`
+- lilas well  `(2021-01-20-lilas-well.md)`
+- closer than you think  `(2021-01-21-closer-than-you-think.md)`
+- doesn’t look broken  `(2021-01-21-doesnt-look-broken.md)`
+- no boundaries (aug 4, 2009)  `(2021-01-21-no-boundaries-aug-4-2009.md)`
+- not my space, man  `(2021-01-21-not-my-space-man.md)`
+- spirolo  `(2021-01-21-spirolo.md)`
+- try walking  `(2021-01-21-try-walking.md)`
+- always clean up after your epiphany  `(2021-01-22-always-clean-up-after-your-epiphany.md)`
+- sleepy samskaras run deep  `(2021-01-22-sleepy-samskaras-run-deep.md)`
+- strange vaudeville  `(2021-01-22-strange-vaudeville.md)`
+- metta meta metta  `(2021-01-24-metta-meta-metta.md)`
+- hurry up and wait  `(2021-02-03-hurry-up-and-wait.md)`
+- spira homage  `(2021-02-06-spira-homage.md)`
+- anxiety - help in drag  `(2021-02-13-anxiety-help-in-drag.md)`
+- god’s interstate  `(2021-04-30-gods-interstate.md)`
+- triggers  `(2021-05-21-triggers.md)`
+- soon, almost, here then  `(2021-05-24-soon-almost-here-then.md)`
+- Need’s Needs  `(2021-05-28-needs-needs-2.md)`
+- Need’s needs  `(2021-05-28-needs-needs.md)`
+- i don’t know  `(2021-05-31-i-dont-know.md)`
+- the view from there (fear and anxiety)  `(2021-06-11-the-view-from-there-fear-and-anxiety.md)`
+- collecting waypoints  `(2021-06-16-collecting-waypoints.md)`
+- the mind wallpapers the world  `(2021-06-25-the-mind-wallpapers-the-world.md)`
+- what is this fuckery  `(2021-06-30-what-is-this-fuckery.md)`
+- nature’s graffiti  `(2021-07-04-natures-graffiti.md)`
+- judgement’s cursive  `(2021-07-21-judgements-cursive.md)`
+- you can *never* get there from here  `(2021-08-06-you-can-never-get-there-from-here.md)`
+- here  `(2021-08-19-here.md)`
+- part of that which divides  `(2021-10-08-part-of-that-which-divides.md)`
+- One Path  `(2021-10-22-one-path.md)`
+- you are loved  `(2021-10-29-you-are-loved.md)`
+- raindrop’s telos  `(2021-11-26-raindrops-telos.md)`
+- unknot yourself  `(2021-12-09-unknot-yourself.md)`
+- Here begat Now  `(2022-02-02-here-begat-now.md)`
+- yield the harvest’s harvest  `(2022-02-03-yield-the-harvests-harvest.md)`
+- absolute’s breakwater  `(2022-02-19-absolutes-breakwater.md)`
+- spiritual rube goldberg machine  `(2022-02-24-spiritual-rube-goldberg-machine.md)`
+- today’s rx for stress  `(2022-03-08-todays-rx-for-stress.md)`
+- morning ralph, morning sam  `(2022-03-17-morning-ralph-morning-sam.md)`
+- benediction  `(2022-03-22-benediction.md)`
+- F5  `(2022-04-05-f5.md)`
+- god’s eavesdropping  `(2022-04-08-gods-eavesdropping.md)`
+- it’s enough  `(2022-04-09-its-enough.md)`
+- spiritual cartography  `(2022-06-23-spiritual-cartography.md)`
+- god’s Current in drag (redux)  `(2022-09-15-gods-current-in-drag-redux.md)`
+- deep bow  `(2023-05-13-deep-bow.md)`
+- inside job  `(2023-07-12-inside-job.md)`
+- Curiousity &amp; Wonder &gt; Dread  `(2023-08-30-curiousity-amp-wonder-gt-dread.md)`
+- the great river  `(2023-09-19-the-great-river.md)`
+- in the lee of the moon  `(2026-06-25-in-the-lee-of-the-moon.md)`
+
+---
+
+## Additions (poems I missed - add title/filename here)
+
+- 

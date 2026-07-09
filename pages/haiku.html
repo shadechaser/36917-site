@@ -1,0 +1,16 @@
+---
+layout: default
+title: haiku
+permalink: /haiku/
+---
+
+
+<ul class="post-list">
+  {% assign haiku_posts = site.haiku | sort: 'date' | reverse %}
+  {% for post in haiku_posts %}
+  <li>
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+  </li>
+  {% endfor %}
+</ul>

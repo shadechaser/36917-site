@@ -1,0 +1,79 @@
+title: 36917
+description: prose, haiku, lyrics, and more by Jerry Mesner
+url: "https://www.36917.me"
+baseurl: ""
+
+author:
+  name: Jerry Mesner
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: /blog/:slug
+
+kramdown:
+  input: GFM
+  hard_wrap: true
+
+# Collections
+collections:
+  haiku:
+    output: true
+    permalink: /haiku/:slug
+  lyrics:
+    output: true
+    permalink: /lyrics/:slug
+  xmas:
+    output: true
+    permalink: /xmas/:slug
+  eulogies:
+    output: true
+    permalink: /eulogies/:slug
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      category: "prose"
+  - scope:
+      path: ""
+      type: "haiku"
+    values:
+      layout: "post"
+      category: "haiku"
+  - scope:
+      path: ""
+      type: "lyrics"
+    values:
+      layout: "post"
+      category: "lyrics"
+  - scope:
+      path: ""
+      type: "xmas"
+    values:
+      layout: "post"
+      category: "xmas"
+  - scope:
+      path: ""
+      type: "eulogies"
+    values:
+      layout: "post"
+      category: "eulogies"
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
+
+paginate: 10
+paginate_path: "/page/:num"
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - node_modules
