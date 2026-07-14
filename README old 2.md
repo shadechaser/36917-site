@@ -59,21 +59,6 @@ Your content here in Markdown.
 
 **For poems/verse:** add `style: verse` to the front matter. This triggers JS in `_layouts/post.html` that wraps each line in a `.vline` span with a hanging indent — so a line that wraps because the browser forced it reads differently from an intentional line break. All 211 existing posts already have this set.
 
-#### Enjambment & lineation — what `style: verse` is actually protecting
-
-Two terms worth knowing, since they're the whole reason this fix exists:
-
-- **Lineation** — where the poet chooses to end one line and start the next. This is a deliberate choice, not just "however much fits on the screen."
-- **Enjambment** — when a sentence or phrase runs past the end of a line with no natural pause (no punctuation, no grammatical stop), spilling into the next line. The opposite is an **end-stopped line**, where the line break lands on a natural pause (a period, comma, etc).
-
-The problem: a browser doesn't know the difference between the poet's intentional line break (lineation) and its own forced wrap (because the line ran out of room on a phone screen, say). Without help, both just look like "the text went to a new line" — which flattens the enjambment and makes it unreadable as verse.
-
-**How `style: verse` turns this on:**
-- With `style: verse` set → each authored line gets wrapped in a `.vline` span with hanging-indent CSS. If the browser has to wrap that line again (because it's too long for the screen), the wrapped part indents — so you can visually tell "this is still the same line, just spilling over" apart from "this is a new line the poet chose to start."
-- Without `style: verse` → none of this happens. Kramdown just renders the hard breaks as normal, and the browser wraps long lines flush to the left margin like ordinary prose. Enjambment and lineation both get visually erased — a wrapped line looks identical to an intentional new line.
-
-Bottom line: turn `style: verse` **on** for anything where line breaks are doing intentional work (poems, lyrics, verse-y prose). Leave it **off** for regular prose paragraphs, where you don't want hanging indents.
-
 ## Key Files — "Where Shit Goes"
 
 | File path | What's there |
