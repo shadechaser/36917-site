@@ -71,7 +71,7 @@ Scanned all 211 files in the prose category. 3 already tagged style: verse.
 - [ ] county Transimmanence  `(2021-10-22-county-transimmanence.md)`
 - [ ] Rohr’s Rem  `(2023-03-09-rohrs-rem.md)`
 - [ ] (a) creation tale  `(2024-10-02-a-creation-tale.md)`
-- [ ] Desiderata for Dummies (c)  `(2022-02-16-desiderata-for-dummies-c.md)`
+- [ ] Desiderata for Dummies (c)  `(2022-02-16-desiderata-for-desiderata-c.md)`
 - [ ] poet’s night  `(2020-05-24-poets-night.md)`
 - [ ] from these to that  `(2021-02-06-from-these-to-that.md)`
 - [ ] You matter  `(2020-04-05-you-matter.md)`

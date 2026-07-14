@@ -1,6 +1,6 @@
 ---
 title: "Note From Covid Days"
-date: 2026-7-14
+date: 2020-7-7
 layout: post
 category: prose
 
