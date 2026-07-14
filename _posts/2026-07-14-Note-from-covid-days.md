@@ -1,9 +1,9 @@
 ---
-title: "in the lee of the moon"
-date: 2026-06-25
+title: "Note From Covid Days"
+date: 2026-7-14
 layout: post
 category: prose
-style: verse
+
 ---
 
 "Jerry,  you're an asshole.  How can you possibly say "it's all going to be ok"?
