@@ -1,6 +1,6 @@
 ---
 title: "God's Resume"
-date: 2020-7-22
+date: 2026-7-22
 layout: post
 category: prose
 style: verse
