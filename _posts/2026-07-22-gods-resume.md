@@ -40,9 +40,7 @@ Folding over and subsuming itself in perfect imperfection
 No work chronology or summary of experience
 Just everything connected to Everything
 Without start stop or borders
-
 ~
-
 Not sure I would have cracked the Muse's easter egg if I was looking instead of being looked, so I'll end with gratitude:
 
 Gratitude for seeing that without boundaries there is no distance between God's resume and mine;
