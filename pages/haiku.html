@@ -5,7 +5,7 @@ permalink: /haiku/
 ---
 
 
-<ul class="post-list">
+<ul class="post-list" id="post-list">
   {% assign haiku_posts = site.haiku | sort: 'date' | reverse %}
   {% for post in haiku_posts %}
   <li>

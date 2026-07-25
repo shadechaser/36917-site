@@ -7,7 +7,7 @@ permalink: /art/
 {% assign art_images = site.static_files | where_exp: "f", "f.path contains '/assets/images/art/'" %}
 {% assign art_images = art_images | sort: "name" %}
 
-<div class="art-grid">
+<div class="art-grid" id="art-grid">
   {% for file in art_images %}
     {% assign caption = file.basename | replace: '-', ' ' %}
     <figure>

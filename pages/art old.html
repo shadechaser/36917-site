@@ -1,0 +1,132 @@
+---
+layout: default
+title: art
+permalink: /art/
+---
+
+{% assign art_images = site.static_files | where_exp: "f", "f.path contains '/assets/images/art/'" %}
+{% assign art_images = art_images | sort: "name" %}
+
+<div class="art-grid">
+  {% for file in art_images %}
+    {% assign caption = file.basename | replace: '-', ' ' %}
+    <figure>
+      <img src="{{ file.path | relative_url }}" alt="{{ caption }}" loading="lazy">
+      <figcaption>{{ caption }}</figcaption>
+    </figure>
+  {% endfor %}
+</div>
+
+<div class="art-lightbox" id="art-lightbox">
+  <figure>
+    <img src="" alt="" id="art-lightbox-img">
+    <figcaption id="art-lightbox-caption"></figcaption>
+  </figure>
+</div>
+
+<style>
+.art-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.art-grid figure {
+  margin: 0;
+  cursor: pointer;
+}
+
+.art-grid img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  display: block;
+  border: 1px solid #ddd9cd;
+  transition: border-color 0.15s ease;
+}
+
+.art-grid figure:hover img {
+  border-color: #999;
+}
+
+.art-grid figcaption {
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: #888;
+  margin-top: 0.5rem;
+  text-transform: lowercase;
+}
+
+.art-lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(20, 18, 14, 0.92);
+  z-index: 1000;
+  align-items: center;
+  justify-content: center;
+  padding: 3vh 3vw;
+  cursor: zoom-out;
+}
+
+.art-lightbox.is-open {
+  display: flex;
+}
+
+.art-lightbox figure {
+  margin: 0;
+  max-width: 90vw;
+  max-height: 90vh;
+  text-align: center;
+}
+
+.art-lightbox img {
+  max-width: 90vw;
+  max-height: 80vh;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.art-lightbox figcaption {
+  font-family: "EB Garamond", serif;
+  font-style: italic;
+  color: #ddd;
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+</style>
+
+<script>
+(function () {
+  var grid = document.querySelector('.art-grid');
+  var lightbox = document.getElementById('art-lightbox');
+  var lightboxImg = document.getElementById('art-lightbox-img');
+  var lightboxCaption = document.getElementById('art-lightbox-caption');
+
+  if (!grid || !lightbox) return;
+
+  grid.addEventListener('click', function (e) {
+    var img = e.target.closest('img');
+    if (!img) return;
+    lightboxImg.src = img.src;
+    lightboxImg.alt = img.alt;
+    lightboxCaption.textContent = img.alt;
+    lightbox.classList.add('is-open');
+  });
+
+  lightbox.addEventListener('click', function () {
+    lightbox.classList.remove('is-open');
+    lightboxImg.src = '';
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+      lightbox.classList.remove('is-open');
+      lightboxImg.src = '';
+    }
+  });
+})();
+</script>

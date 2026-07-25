@@ -4,7 +4,7 @@ title: yearly xmas prose
 permalink: /xmas/
 ---
 
-<ul class="post-list">
+<ul class="post-list" id="post-list">
   {% assign xmas_posts = site.xmas | sort: 'date' | reverse %}
   {% for post in xmas_posts %}
   <li>

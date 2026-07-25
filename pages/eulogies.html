@@ -5,7 +5,7 @@ permalink: /eulogies/
 intro: 'Eulogies I wrote and delivered'
 ---
 
-<p class="page-intro">{{ page.intro }}</p>
+<p class="page-intro" id="post-list">{{ page.intro }}</p>
 
 <ul class="post-list">
   {% assign eulogy_posts = site.eulogies | sort: 'date' | reverse %}

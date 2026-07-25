@@ -9,7 +9,7 @@ pagination:
 
 <p class="page-intro">{{ page.intro }}</p>
 
-<ul class="post-list">
+<ul class="post-list" id="post-list">
   {% for post in paginator.posts %}
   <li>
     <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>

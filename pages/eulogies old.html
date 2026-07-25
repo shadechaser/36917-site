@@ -1,0 +1,18 @@
+---
+layout: default
+title: eulogies
+permalink: /eulogies/
+intro: 'Eulogies I wrote and delivered'
+---
+
+<p class="page-intro">{{ page.intro }}</p>
+
+<ul class="post-list">
+  {% assign eulogy_posts = site.eulogies | sort: 'date' | reverse %}
+  {% for post in eulogy_posts %}
+  <li>
+    <h2 class="post-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
+    <p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+  </li>
+  {% endfor %}
+</ul>
