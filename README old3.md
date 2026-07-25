@@ -85,7 +85,7 @@ Bottom line: turn `style: verse` **on** for anything where line breaks are doing
 | `_layouts/post.html` | Verse/poetry line-wrap fix (see `style: verse` above) |
 | `assets/css/main.css` | Main stylesheet (renamed from `.scss` — plain CSS now, no Sass build step) |
 | `_config.yml` | Site config; `hard_wrap: true` for kramdown |
-| `index.html` | Prose landing page ("I write a lot of prose..." text under the hero). To change that text, edit the `intro:` field in the front matter block at the top of the file. **Known bug:** YAML double-quote issue — wrap the outer string in single quotes instead of double quotes. |
+| `index.html` | Prose landing page; has an `intro:` front matter field. **Known bug:** YAML double-quote issue — fix is to wrap the outer string in single quotes instead. |
 | `pages/lyrics.html`, `pages/eulogies.html` | Have `intro:` front matter added; actual intro text still pending |
 | `art.html` | Auto-gallery, see above |
 | `it-could-only-ever-be-this/index.html` | Standalone interactive piece, clean URL |
