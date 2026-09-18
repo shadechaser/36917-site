@@ -11,7 +11,7 @@ Peaceful here in the service waiting room, as light from a middle aged star wash
 My neglect of its gifts for the first half of the wait is breathtaking:
 I wear its warmth without regard, peripheral its colors without notice, absorb its vitamin d without gratitude
 
-Astonishing really, that a four billion year journey of gravity collapse and energy transfer and photon road tripping across 93 million miles of a vacuum is lost on mebut there you have it
+Astonishing really, that a four billion year journey of gravity collapse and energy transfer and photon road tripping across 93 million miles of a vacuum is lost on me but there you have it
 
 The eye with which I see god may be the eye that god sees me with
 but the I with which I see god is a whole nother story
