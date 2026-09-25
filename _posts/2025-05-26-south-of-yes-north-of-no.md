@@ -30,7 +30,7 @@ and yours,
 and ours
 
 Always a dynamic wrestling match
-between the sovereignty** **of Her stamped notes
+between the sovereignty of Her stamped notes
 and the shimmer of our free-willed tempo and volume
 ~
 You'll be done before She is,
