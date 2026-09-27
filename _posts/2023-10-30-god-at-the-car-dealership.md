@@ -27,10 +27,8 @@ She is device-less, gazing into space with a sparkle that hints at scherzos and 
 Our eyes connect and in that moment
 
 The walls of the dealership collapse like a four petalled lotus
-Mechanics and warranty-extenders and salesmen are stripped of everything they are not
-and left like god's flares exulting 
-"Just This, Just this, Just This" across the universe that has been revealed 
-as not starting or stopping but simply conduiting through the dealership's heart
+Mechanics and warranty-extenders and salesmen are stripped of everything they are not and left like god's flares exulting 
+"Just This, Just this, Just This" across the universe that has been revealed  as not starting or stopping but simply conduiting through the dealership's heart
 
 ~
 
