@@ -6,7 +6,7 @@ category: prose
 style: verse
 ---
 
-I can give you descriptions of the Great River - the still waters and rough eddies that mix and flow like a Van Gogh turned on its side stetched shore to shore - but my words will always be two steps away from Source by the time they reach your canvas; pale reflections of the every-all.
+I can give you descriptions of the Great River - the still waters and rough eddies that mix and flow like a Van Gogh turned on its side stetched shore tshore - but my words will always be two steps away from Source by the time they reach your canvas; pale reflections of the every-all.
 
 I can give you directions to the Great River - but there's a good chance you'll be sent back to forge your own path from Here to There.
 
@@ -14,7 +14,7 @@ Mayhap the best i can do is tell you about today's traipse, let what you need fi
 
 ~
 
-Trees whisper-droned a thank you as the Maginficent Bastard and I sallied forth down the path early morning. he quadraped-ed and I loped as a prayer shawl of mist arrived oe'r the canopy. It was not the full-on rain that was needed, but the need's-need had been heard and responded to, and that was enough.
+Trees whisper-droned a thank you as the Maginficent Bastard and I sallied forth down the path early morning. He quadraped-ed and I loped as a prayer shawl of mist arrived oe'r the canopy. It was not the full-on rain that was needed, but the need's-need had been heard and responded to, and that was enough.
 
 The waters were heard before they were scened - impossibly, if the senses were to be trusted - flowing to the left AND right both up AND down the incline of ground I knew for a fact was not an island.
 
