@@ -27,7 +27,6 @@ but is Opening itself
 
 Moons and stars roll like marbles toppling event horizons, while impossible topiaries wander green hills singing stanzas from poetry that is shrouded from the head but understood by the heart
 
-Runs ons are run offs here,  feeding the Great River that is banked only by accepted exceptions;
-an eternal quantification of perfection through a sample size of One
+Runs ons are run offs here,  feeding the Great River that is banked only by accepted exceptions; an eternal quantification of perfection through a sample size of One
 
 Sub ek
