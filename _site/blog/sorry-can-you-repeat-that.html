@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </p>
   </header>
 
-  <div class="post-content verse">
+  <div class="post-content">
     <p>If the gaps and leaps i make in conversation surprise you, you would be gobsmacked at what precedes them ~</p>
 
 <p>See while my Room Behind the Eyes is not fundamentally different than yours,  god seems to have offshored the Window to it and proceeded to installation without a lot of QA</p>
@@ -962,18 +962,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </nav>
 </article>
 
-
-<script>
-  // Wrap each intentional line (separated by <br>) in its own
-  // block so the hanging-indent CSS only triggers on lines the
-  // browser is forced to wrap, not on lines the poet chose.
-  document.querySelectorAll('.post-content.verse p').forEach(function (p) {
-    var parts = p.innerHTML.split(/<br\s*\/?>/i);
-    p.innerHTML = parts.map(function (t) {
-      return '<span class="vline">' + t + '</span>';
-    }).join('');
-  });
-</script>
 
 
       </div>

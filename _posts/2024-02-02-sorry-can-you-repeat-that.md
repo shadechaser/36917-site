@@ -3,7 +3,7 @@ title: "sorry, can you repeat that?"
 date: 2024-02-02
 layout: post
 category: prose
-style: verse
+
 ---
 
 If the gaps and leaps i make in conversation surprise you, you would be gobsmacked at what precedes them ~
