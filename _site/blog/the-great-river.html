@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </p>
   </header>
 
-  <div class="post-content verse">
+  <div class="post-content">
     <p>I can give you descriptions of the Great River - the still waters and rough eddies that mix and flow like a Van Gogh turned on its side stetched shore tshore - but my words will always be two steps away from Source by the time they reach your canvas; pale reflections of the every-all.</p>
 
 <p>I can give you directions to the Great River - but there’s a good chance you’ll be sent back to forge your own path from Here to There.</p>
@@ -952,18 +952,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </nav>
 </article>
 
-
-<script>
-  // Wrap each intentional line (separated by <br>) in its own
-  // block so the hanging-indent CSS only triggers on lines the
-  // browser is forced to wrap, not on lines the poet chose.
-  document.querySelectorAll('.post-content.verse p').forEach(function (p) {
-    var parts = p.innerHTML.split(/<br\s*\/?>/i);
-    p.innerHTML = parts.map(function (t) {
-      return '<span class="vline">' + t + '</span>';
-    }).join('');
-  });
-</script>
 
 
       </div>

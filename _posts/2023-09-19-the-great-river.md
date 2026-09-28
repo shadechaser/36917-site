@@ -3,7 +3,7 @@ title: "the great river"
 date: 2023-09-19
 layout: post
 category: prose
-style: verse
+
 ---
 
 I can give you descriptions of the Great River - the still waters and rough eddies that mix and flow like a Van Gogh turned on its side stetched shore tshore - but my words will always be two steps away from Source by the time they reach your canvas; pale reflections of the every-all.
