@@ -3,7 +3,7 @@ title: "breadcrumbs"
 date: 2024-01-01
 layout: post
 category: prose
-style: verse
+
 ---
 
 I found your breadcrumbs in the smudged place between prayer, sleep, and dawn; that space where hope leafs to belief and faith, or dies on the vine as the heart and the head conspire for control of the day.
