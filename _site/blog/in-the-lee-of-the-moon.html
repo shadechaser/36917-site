@@ -919,7 +919,7 @@ document.addEventListener('DOMContentLoaded', function() {
     </p>
   </header>
 
-  <div class="post-content verse">
+  <div class="post-content">
     <p>It gets quiet here in the lee of the moon. Nouns accede to verbs, plurals reduce to the singular, and every That collapses to This, The Great River, which predates god by eternity.</p>
 
 <p>You called emotions my body’s poetry, and you weren’t wrong. Most nights you can find me lettersetting the prose between the Current’s shores; the limbic begetting symbols and metahpors lost to the head but understood by the heart.</p>
@@ -938,18 +938,6 @@ document.addEventListener('DOMContentLoaded', function() {
   </nav>
 </article>
 
-
-<script>
-  // Wrap each intentional line (separated by <br>) in its own
-  // block so the hanging-indent CSS only triggers on lines the
-  // browser is forced to wrap, not on lines the poet chose.
-  document.querySelectorAll('.post-content.verse p').forEach(function (p) {
-    var parts = p.innerHTML.split(/<br\s*\/?>/i);
-    p.innerHTML = parts.map(function (t) {
-      return '<span class="vline">' + t + '</span>';
-    }).join('');
-  });
-</script>
 
 
       </div>
