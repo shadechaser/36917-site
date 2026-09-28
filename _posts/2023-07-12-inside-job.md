@@ -3,7 +3,7 @@ title: "inside job"
 date: 2023-07-12
 layout: post
 category: prose
-style: verse
+
 ---
 
 The good news is after more than 5 decades of research I’ve discovered the one thing completely outside myself that is 100% responsible for how I deal with my mistakes, failures, and unfair suffering.
