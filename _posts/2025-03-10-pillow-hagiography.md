@@ -6,11 +6,9 @@ category: prose
 style: verse
 ---
 
-Not sure how, exactly, you came up with "pillow hagiography", but Thank You; 
-a pithier description of my night journeys is unlikely to be found.
+Not sure how, exactly, you came up with "pillow hagiography", but Thank You; a pithier description of my night journeys is unlikely to be found.
 
-While there's only memory to rely on - even the idea of taking pictures hints at a profaning I am not willing to toy with - 
-no two seem the same...
+While there's only memory to rely on - even the idea of taking pictures hints at a profaning I am not willing to toy with - no two seem the same...
 
 --
 
