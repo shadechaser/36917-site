@@ -8,7 +8,7 @@ style: verse
 
 Let's do some building together ~
 Grab some corn-dusted sheet metal from our separate silos,
-meet in the plain between, and make a new one
+meet in the plane between, and make a new one
 
 There, in the lee of the creek
 we can parley over strong coffee and sandwiches;
